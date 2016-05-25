@@ -11,6 +11,7 @@ var proxyGitHub = function(request, response) {
   }))(request, response);
 };
 
+//think of this like page.js
 app.get('/github/*', proxyGitHub);
 
 app.use(express.static('./'));
